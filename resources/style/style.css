@@ -1,0 +1,1086 @@
+@media (max-width: 768px) {
+
+
+    .modal-content {
+        width: 85%;
+    }
+
+    #header-ad {
+        display: none;
+    }
+
+
+    header,
+    main {
+        padding: 10px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+
+    #sidebar,
+    #main-content {
+        width: 100%;
+        float: none;
+    }
+
+    img {
+        max-width: 200px;
+        max-height: 200px;
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .logout-button {
+        width: 60%;
+    }
+
+    .modal-content input[type="email"],
+    .modal-content input[type="password"] {
+        width: calc(75% - 20px);
+    }
+
+    .tab button {
+        padding: 10px 5px;
+    }
+
+    .privacy-button {
+        width: calc(80% - 5px);
+    }
+
+    .friends-list {
+        width: 100%;
+    }
+
+    .chat {
+        display: none;
+    }
+
+    #header-ad {
+        font-size: small;
+    }
+
+}
+
+@media (min-width: 601px) {
+
+    .modal-content {
+        width: 50%;
+    }
+
+    .message {
+        padding: 5px 10px;
+    }
+}
+
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #2768E2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 661px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+    /* Limita la altura para permitir desplazamiento */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.message .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.incoming {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.outgoing {
+    background-color: #2768E2;
+    color: white;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.system {
+    color: black;
+}
+
+#compose {
+    display: flex;
+    justify-content: space-between;
+}
+
+#compose input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#compose button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2768E2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2768E2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos del modal */
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos para los campos de entrada */
+/* Estilos para los campos de entrada */
+.modal-content input[type="email"],
+.modal-content input[type="password"],
+.modal-content input[type="birthdateInput"],
+.modal-content input[type="text"] {
+    font-family: "Montserrat", sans-serif;
+    width: calc(75% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    /* Centra verticalmente */
+    border: 1px solid #ccc;
+    border-radius: 60px;
+    display: block;
+    /* Asegura que cada campo de entrada esté en una línea diferente */
+}
+
+.username {
+    width: 80%;
+    /* Ajusta el tamaño según tus necesidades */
+    margin-right: 10px;
+    font-family: "Montserrat", sans-serif;
+    width: calc(75% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    /* Centra verticalmente */
+    border: 1px solid #ccc;
+    border-radius: 60px;
+    display: block;
+    /* Asegura que cada campo de entrada esté en una línea diferente */
+
+}
+
+.birthdateInput {
+    font-family: "Montserrat", sans-serif;
+    width: calc(75% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    /* Centra verticalmente */
+    border: 1px solid #ccc;
+    border-radius: 60px;
+    display: block;
+    /* Asegura que cada campo de entrada esté en una línea diferente */
+}
+
+/* Estilos para los botones */
+.modal-content button {
+    color: white;
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #2768E2;
+
+}
+
+#loginModalLoginBtn {
+    background-color: #2768E2;
+    color: white;
+}
+
+#loginModalLoginBtn:hover {
+    background-color: #45a049;
+}
+
+#loginModalRegisterBtn {
+    background-color: #008CBA;
+    color: white;
+}
+
+#loginModalRegisterBtn:hover {
+    background-color: #007b9d;
+}
+
+
+/* Estilo base para botones */
+
+#dishboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    /* Dark background for contrast */
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures child elements are spaced apart */
+    align-items: center;
+    /* Vertical alignment */
+    width: 100%;
+    /* Takes full width of the footer */
+}
+
+#user-profile {
+    display: flex;
+    align-items: center;
+}
+
+#user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#user-info h3,
+#user-info p {
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns buttons to the right */
+    gap: 5px;
+    /* Space between buttons */
+    /* Adds space above the navigation bar */
+}
+
+.footer-nav button {
+    padding: 10px;
+    /* Slightly lighter than footer background */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Style for modal */
+/* General Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Adds nice shadow */
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+}
+
+/* Animation for the modal showing */
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the tab links */
+.tab {
+    overflow: hidden;
+
+}
+
+.tab button {
+    background-color: #2768E2;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+    border-radius: 4px 4px 0 0;
+    /* Rounded corners for the top */
+    font-size: 16px;
+}
+
+.tab button:hover {
+    background-color: #9e2a1d;
+    /* Adds a hover effect to the buttons */
+}
+
+.tab button.active {
+    background-color: #ccc;
+    /* Different background color for the active tab */
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    /* Rounded bottom corners */
+}
+
+#profileForm label {
+    margin-right: 10px;
+}
+
+#profileForm input[type="text"],
+#profileForm input[type="email"],
+#profileForm input[type="file"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#profileForm button {
+    padding: 10px 20px;
+    background-color: #2768E2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#profileForm button:hover {
+    background-color: #45a049;
+}
+
+#friends-list,
+#chat {
+    float: left;
+    width: 30%;
+    height: 400px;
+    overflow: auto;
+    padding: 10px;
+}
+
+#chat {
+    width: 65%;
+    margin-left: 5%;
+}
+
+#chat-display,
+#no-friend-selected {
+    height: 100%;
+}
+
+#chat-message {
+    width: 100%;
+    height: 50px;
+}
+
+
+.logbutton {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #2768E2;
+    align-items: center;
+    border: #2768E2;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+}
+
+.logbutton:hover {
+    text-decoration: underline;
+}
+
+/* Chat container styles */
+
+
+#messages {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.friend {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #e8e8e8;
+}
+
+
+
+/* Styles for the messages */
+.messages {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 80%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.incoming {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background-color: #2768E2;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Styles for the message input area */
+.compose {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.compose-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.compose-send {
+    padding: 10px 20px;
+    background-color: #2768E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Chat container styles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    /* Esto hará que el contenedor tome el 90% de la altura de la ventana del navegador */
+    max-width: 800px;
+    /* O un ancho máximo que consideres adecuado */
+    margin: 0 auto;
+    /* Centrar el contenedor en la pantalla */
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /*Opcional: agrega sombra para resaltar el módulo */
+}
+
+/* Styles for the messages */
+.messages {
+    overflow-y: auto;
+    height: 80%;
+    /* Asigna un porcentaje del contenedor para los mensajes */
+    padding: 20px;
+    /* Agrega más padding para dar más espacio alrededor de los mensajes */
+}
+
+.message {
+    max-width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.incoming {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background-color: #2768E2;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Styles for the message input area */
+.compose {
+    display: flex;
+    padding: 20px;
+    /* Agrega más padding para dar más espacio */
+    background: #fff;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.compose-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.friend-request {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.friend-name {
+    margin-right: 10px;
+}
+
+.options-menu {
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.options-menu button {
+    display: block;
+    width: 100%;
+}
+
+
+/* General Modal Styles */
+.settings-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-modal-content {
+    background-color: #36393F;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    color: #dcddde;
+}
+
+.close {
+    color: #8b8b8b;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #2768E2;
+}
+
+/* Tab Styles */
+.tab {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.tablinks {
+    background-color: transparent;
+    color: #dcddde;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tablinks:hover {
+    background-color: #4A4A4A;
+    border-radius: 5px;
+}
+
+.tabcontent {
+    display: none;
+    margin-right: 10px;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.tab-icon {
+    margin-right: 5px;
+}
+
+/* Buttons */
+button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #2768E2;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+button:hover {
+    background-color: #2254B0;
+}
+
+#resetpasswords {
+    color: #28a745;
+    /* Verde oscuro */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    /* Borde verde */
+    border-radius: 5px;
+    background-color: #d4edda;
+    /* Verde claro */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    /* Inicialmente oculto hasta que sea necesario mostrarlo */
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #28a745 #d4edda;
+    /* Colores de la barra de desplazamiento en verde */
+}
+
+#resetpasswords::-webkit-scrollbar {
+    width: 5px;
+    /* Ancho del scrollbar para navegadores webkit */
+}
+
+#resetpasswords::-webkit-scrollbar-track {
+    background: #d4edda;
+    /* Color de fondo del track del scrollbar */
+}
+
+#resetpasswords::-webkit-scrollbar-thumb {
+    background-color: #28a745;
+    /* Color del thumb del scrollbar */
+    border-radius: 10px;
+}
+
+
+
+#statusMessageS {
+    color: #28a745;
+    /* Verde oscuro */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    /* Borde verde */
+    border-radius: 5px;
+    background-color: #d4edda;
+    /* Verde claro */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    /* Inicialmente oculto hasta que sea necesario mostrarlo */
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #28a745 #d4edda;
+    /* Colores de la barra de desplazamiento en verde */
+}
+
+#statusMessageS::-webkit-scrollbar {
+    width: 5px;
+    /* Ancho del scrollbar para navegadores webkit */
+}
+
+#statusMessageS::-webkit-scrollbar-track {
+    background: #d4edda;
+    /* Color de fondo del track del scrollbar */
+}
+
+#statusMessageS::-webkit-scrollbar-thumb {
+    background-color: #28a745;
+    /* Color del thumb del scrollbar */
+    border-radius: 10px;
+}
+
+
+
+
+#successMessage {
+    color: #28a745;
+    /* Verde oscuro */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    /* Borde verde */
+    border-radius: 5px;
+    background-color: #d4edda;
+    /* Verde claro */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    /* Inicialmente oculto hasta que sea necesario mostrarlo */
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #28a745 #d4edda;
+    /* Colores de la barra de desplazamiento en verde */
+}
+
+#successMessage::-webkit-scrollbar {
+    width: 5px;
+    /* Ancho del scrollbar para navegadores webkit */
+}
+
+#successMessage::-webkit-scrollbar-track {
+    background: #d4edda;
+    /* Color de fondo del track del scrollbar */
+}
+
+#successMessage::-webkit-scrollbar-thumb {
+    background-color: #28a745;
+    /* Color del thumb del scrollbar */
+    border-radius: 10px;
+}
+
+#legalInfo {
+    color: #e74c3c;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 60px;
+    background-color: #fdecec;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #e74c3c #fdecec;
+}
+
+
+#usernameerror {
+    color: #e74c3c;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    background-color: #fdecec;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #e74c3c #fdecec;
+}
+
+#resetpasswordtext {
+    color: #e74c3c;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    background-color: #fdecec;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #e74c3c #fdecec;
+}
+
+#resetpasswordtext::-webkit-scrollbar {
+    width: 5px;
+}
+
+#resetpasswordtext::-webkit-scrollbar-track {
+    background: #fdecec;
+}
+
+#resetpasswordtext::-webkit-scrollbar-thumb {
+    background-color: #e74c3c;
+    border-radius: 10px;
+}
+
+
+#errorMessage {
+    color: #e74c3c;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    background-color: #fdecec;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #e74c3c #fdecec;
+}
+
+#errorMessage::-webkit-scrollbar {
+    width: 5px;
+}
+
+#errorMessage::-webkit-scrollbar-track {
+    background: #fdecec;
+}
+
+#errorMessage::-webkit-scrollbar-thumb {
+    background-color: #e74c3c;
+    border-radius: 10px;
+}
+
+
+
+#statusMessage {
+    color: #e74c3c;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    background-color: #fdecec;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: none;
+    max-height: 100px;
+    text-align: center;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: #e74c3c #fdecec;
+}
+
+#statusMessage::-webkit-scrollbar {
+    width: 5px;
+}
+
+#statusMessage::-webkit-scrollbar-track {
+    background: #fdecec;
+}
+
+#statusMessage::-webkit-scrollbar-thumb {
+    background-color: #e74c3c;
+    border-radius: 10px;
+}
+
+
+
+.login-dash:hover {
+    text-decoration: underline #2768E2;
+}
+
+#message-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.legal-zoom:hover {
+    cursor: help;
+    font-size: larger;
+}
+
+
+#usernameInput {
+    font-family: "Montserrat", sans-serif;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 60px;
+    display: block;
+}
+
+.disabledbutton {
+    font-family: "Montserrat", sans-serif;
+    background-color: #b43224;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 60px;
+    width: calc(50% - 5px);
+
+}
