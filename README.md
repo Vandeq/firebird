@@ -8,4 +8,4 @@ Remember, not make a Firebird copy.
 
 If you want to use firebird to make your own messaging app, you have to put in the footer some like this "Based in Firebird, Developed by Vancober, You can Found it in GitHub"
 
-You need help? Contact us
+Firebird works with firebase. We added a firebase account to firebird open source, but you can change it.
