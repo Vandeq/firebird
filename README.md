@@ -1,6 +1,6 @@
 # Firebird - Source Code
 
-Firebird is now a open source project.
+Firebird is now open source!
 
 Note: Firebird is owned by Vancober, but you can use this code as a base to a new messaging app. 
 
